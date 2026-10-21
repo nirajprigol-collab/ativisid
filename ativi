@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola para Todos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Escola para Todos</h1>
+        <nav aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#acessibilidade">Acessibilidade</a>
+            <a href="#autismo">Autismo</a>
+            <a href="#surdez">Pessoas surdas</a>
+            <a href="#recursos">Recursos</a>
+        </nav>
+        <button id="aumentar" type="button">A+ Aumentar texto</button>
+        <button id="diminuir" type="button">A- Diminuir texto</button>
+    </header>
+
+    <main id="inicio">
+        <section class="destaque">
+            <h2>Uma escola acessível para todos</h2>
+            <p>
+                Nossa escola acredita que todos têm direito à educação.
+                Por isso, buscamos oferecer um ambiente inclusivo,
+                seguro e preparado para diferentes necessidades.
+            </p>
+            <img src="imagens/escola.jpg"
+                 alt="Estudantes entrando em uma escola com rampa de acesso">
+        </section>
+
+        <section id="acessibilidade">
+            <h2>O que é acessibilidade?</h2>
+            <p>
+                Acessibilidade é garantir que todas as pessoas possam
+                utilizar os espaços, receber informações e participar
+                das atividades com autonomia e segurança.
+            </p>
+            <img src="imagens/acessibilidade.jpg"
+                 alt="Entrada escolar com rampa e espaço para circulação">
+        </section>
+
+        <section id="autismo">
+            <h2>Acessibilidade para pessoas autistas</h2>
+            <p>
+                A escola deve respeitar as necessidades de cada estudante
+                autista, oferecendo apoio e um ambiente acolhedor.
+            </p>
+            <ul>
+                <li>Utilizar uma rotina visual.</li>
+                <li>Explicar as atividades de forma clara.</li>
+                <li>Avisar antecipadamente sobre mudanças.</li>
+                <li>Oferecer um local tranquilo para pausas.</li>
+            </ul>
+        </section>
+
+        <section id="surdez">
+            <h2>Acessibilidade para pessoas surdas</h2>
+            <p>
+                Estudantes surdos precisam ter acesso às informações
+                e às aulas por meio de formas acessíveis de comunicação.
+            </p>
+            <ul>
+                <li>Disponibilizar intérprete de Libras quando necessário.</li>
+                <li>Utilizar vídeos com legendas.</li>
+                <li>Oferecer materiais escritos.</li>
+                <li>Usar avisos visuais na escola.</li>
+            </ul>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos de acessibilidade</h2>
+
+            <article>
+                <h3>1. Rampas de acesso</h3>
+                <p>Facilitam a circulação de pessoas com mobilidade reduzida.</p>
+            </article>
+
+            <article>
+                <h3>2. Piso tátil</h3>
+                <p>Ajuda pessoas com deficiência visual a se orientarem.</p>
+            </article>
+
+            <article>
+                <h3>3. Libras e legendas</h3>
+                <p>Facilitam o acesso à comunicação para pessoas surdas.</p>
+            </article>
+
+            <article>
+                <h3>4. Materiais acessíveis</h3>
+                <p>Textos claros e recursos visuais ajudam na aprendizagem.</p>
+            </article>
+
+            <article>
+                <h3>5. Tecnologia assistiva</h3>
+                <p>Leitores de tela e teclados adaptados ajudam os estudantes.</p>
+            </article>
+
+            <article>
+                <h3>6. Ambiente acolhedor</h3>
+                <p>Respeitar as diferenças torna a escola mais inclusiva.</p>
+            </article>
+        </section>
+
+        <section class="mensagem">
+            <h2>Inclusão é responsabilidade de todos!</h2>
+            <p>
+                Respeitar as diferenças e ajudar quem precisa são atitudes
+                importantes para construir uma escola melhor.
+            </p>
+            <a href="#inicio">Voltar ao início</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto escolar: Uma escola acessível para todos.</p>
+        <p>Educação, respeito e inclusão para todos!</p>
+    </footer>
+
+    <script>
+        let tamanho = 100;
+
+        document.getElementById("aumentar").addEventListener("click", function () {
+            tamanho = Math.min(tamanho + 10, 140);
+            document.documentElement.style.fontSize = tamanho + "%";
+        });
+
+        document.getElementById("diminuir").addEventListener("click", function () {
+            tamanho = Math.max(tamanho - 10, 80);
+            document.documentElement.style.fontSize = tamanho + "%";
+        });
+    </script>
+
+</body>
+</html>
